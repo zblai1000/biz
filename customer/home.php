@@ -76,7 +76,7 @@ if (!empty($product_array)) {
 ?>
 
 <div class="productDiv">
-    <form method="post" action="home.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+    <form method="post" action="home.php?action=add&code=<?php echo $product_array[$key]["id"]; ?>">
 
     <div class="inDiv" style="margin: 3px; flex-direction: column; width: auto; text-align: left;">
         <p style="font-weight: normal; margin: 0px; left: 0;"><?php echo $product_array[$key]["business"]; ?></p>

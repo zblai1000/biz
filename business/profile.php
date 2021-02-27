@@ -61,6 +61,7 @@ function closeNav() {
   <a href="#">Blogs</a>
   <a href="#">Podcasts</a>
   <a href="#">Forums</a>
+  <a href="#">Post</a>
 </div>
 
 
@@ -83,7 +84,7 @@ if (!empty($product_array)) {
 ?>
 
 
-    <form method="post" action="home.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
+    <form method="post" action="home.php?action=add&code=<?php echo $product_array[$key]["id"]; ?>">
 
   
 
