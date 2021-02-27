@@ -10,7 +10,7 @@
     <div class="header">
 
         <div class="logo">
-            <img src="../style/logo.png" class="logoImg">
+        <a href="home.php"><img src="../style/logo.png" class="logoImg"></a>
 
         </div>
 
@@ -36,10 +36,10 @@ function closeNav() {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Business Categories</a>
+  <a href="category.php">Business Categories</a>
   <a href="blogs.php">Blogs</a>
-  <a href="#">Podcasts</a>
-  <a href="#">Forums</a>
+  <a href="podcastNav.php">Podcasts</a>
+  <a href="forums.php">Forums</a>
 </div>
 
 
@@ -50,5 +50,12 @@ function closeNav() {
 
 <img src="../style/podcast.jpg" style="width: 100%; height:100%; margin: 0px">
 <img src="../style/play.png" style="width: 100%; height:100%; margin: 0px">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button class="btn" style="background-color: red; width: 100%"><a href="home.php" style="text-decoration: none; color: white; ">Exit Podcast</a></button>
 </body>
 </html>

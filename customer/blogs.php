@@ -10,7 +10,7 @@
     <div class="header">
 
         <div class="logo">
-            <img src="../style/logo.png" class="logoImg">
+            <a href="home.php"><img src="../style/logo.png" class="logoImg"></a>
 
         </div>
 
@@ -36,10 +36,10 @@ function closeNav() {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Business Categories</a>
-  <a href="#">Blogs</a>
-  <a href="#">Podcasts</a>
-  <a href="#">Forums</a>
+  <a href="category.php">Business Categories</a>
+  <a href="blogs.php">Blogs</a>
+  <a href="podcastNav.php">Podcasts</a>
+  <a href="forums.php">Forums</a>
 </div>
 
 
@@ -48,10 +48,10 @@ function closeNav() {
 
     <div>
 
-        <img src="../style/profileSample.jpg" class="profile">
-        <img src="../style/profileSample.jpg" class="profile">
-        <img src="../style/profileSample.jpg" class="profile">
-        <img src="../style/profileSample.jpg" class="profile">
+    <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
   
 
     </div>  

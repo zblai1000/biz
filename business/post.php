@@ -149,7 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="javascript.js"></script>
      
-    <title>Eyeglasses</title>
+    <title>Post</title>
 
     <style>
 
@@ -272,15 +272,11 @@ else{
     <div class="header">
 
         <div class="logo">
-            <img src="../style/logo.png" class="logoImg">
+            <a href="profile.php"><img src="../style/logo.png" class="logoImg"></a>
 
         </div>
 
-        <div class="nav">
-        <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776; </span>
-
-        </div>
-
+        
     </div>
     <hr>
 
@@ -311,7 +307,7 @@ function closeNav() {
     <form action="post.php" method="post" enctype="multipart/form-data">
     <p>Title: <input type="text" name="itemName" size="10" maxlength="40" value="<?php  if (isset($_POST['itemName'])) echo $_POST['itemName']; ?>"  /><?php echo $itemName_error; ?></p>
    
-    <p>Item description: <input type="text" name="info" size="10" maxlength="1000" value="<?php if (isset($_POST['info'])) echo $_POST['info']; ?>"  /><?php echo $info_error; ?></p>
+    <p>Item description: <input type="text" name="info" size="30" maxlength="1000" value="<?php if (isset($_POST['info'])) echo $_POST['info']; ?>"  /><?php echo $info_error; ?></p>
    
   
     <br>
@@ -335,7 +331,7 @@ function closeNav() {
         
  </div>
 
- <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
 
 
     <br>
@@ -345,6 +341,8 @@ function closeNav() {
     <hr>
     <br>
     <br>
+
+
 
 
 </body>

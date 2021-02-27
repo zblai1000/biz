@@ -1,17 +1,24 @@
 <?php 
-error_reporting(0);
+
 session_start();
  
-// Check if the user is already logged in, if yes then redirect him to welcome page
+// Check if the user is already logged in, if yes then redirect him to profile page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     $user = $_SESSION["username"]; 
-    // header("location: profile.php");
+    $link = $_SESSION["link"];
+
     
    
 }
 else{
     $user = "Sign In"; 
 }
+
+require_once("dbcontroller1.php");
+
+
+
+$db_handle = new DBController();
  
 // This script performs an INSERT query to add a record to the users table.
 
@@ -33,50 +40,32 @@ else{
 
         </div>
 
-        <div class="nav">
-        <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776; </span>
-
-        </div>
+     
 
     </div>
     <hr>
 
-    <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
 </head>
 <body>
 
-<p class="productDiv"><?php echo $user ?></p>
+<p class="productDiv"><?php echo $user?></p>
+<p class="productDiv"><?php echo $link ?></p>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Business Categories</a>
-  <a href="#">Blogs</a>
-  <a href="#">Podcasts</a>
-  <a href="#">Forums</a>
-  <a href="#">Post</a>
-</div>
+
 
 
 
 
 <br>
+<button class="btn"><a href="post.php" style="text-decoration: none; color: white;">Create new post</a></button>
 <br>
 <div class="profileDiv">
 <?php
 
-require_once("dbcontroller1.php");
 
 
 
-$db_handle = new DBController();
 
 $product_array = $db_handle->runQuery("SELECT * FROM items WHERE business='$user'");
 if (!empty($product_array)) { 
@@ -107,7 +96,7 @@ if (!empty($product_array)) {
 </div>
 
 <div>
-  <button><a href="logout.php">Logout</a></button>
+  <button class="btn" style="background-color: red;"><a href="logout.php" style="text-decoration: none; color: white;">Logout</a></button>
 </div>    
 </body>
 </html>

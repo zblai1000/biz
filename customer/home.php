@@ -48,10 +48,11 @@ function closeNav() {
 
     <div>
 
-        <img src="../style/profileSample.jpg" class="profile">
-        <img src="../style/profileSample.jpg" class="profile">
-        <img src="../style/profileSample.jpg" class="profile">
-        <img src="../style/profileSample.jpg" class="profile">
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        <a href="demo.php"><img src="../style/profileSample.jpg" class="profile"></a>
+        
   
 
     </div>  
@@ -90,6 +91,9 @@ if (!empty($product_array)) {
     <div class="productDiv">
     <p style="font-weight: bold; margin: 0px;"><?php echo $product_array[$key]["itemName"]; ?></p>
         <p style="margin: 5px;"><?php echo $product_array[$key]["info"]; ?></p>
+        <p style="margin: 0px; font-weight: light;">________________________</p>
+        <img src="../style/like.png">
+        <img src="../style/comment.png">
 
     </div>
     <br>
@@ -103,6 +107,8 @@ if (!empty($product_array)) {
 
 
 </div>
+
+
     
 </body>
 </html>

@@ -10,7 +10,7 @@
     <div class="header">
 
         <div class="logo">
-            <img src="../style/logo.png" class="logoImg">
+        <a href="home.php"><img src="../style/logo.png" class="logoImg"></a>
 
         </div>
 
@@ -36,10 +36,10 @@ function closeNav() {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Business Categories</a>
+  <a href="category.php">Business Categories</a>
   <a href="blogs.php">Blogs</a>
-  <a href="podcast.php">Podcasts</a>
-  <a href="#">Forums</a>
+  <a href="podcastNav.php">Podcasts</a>
+  <a href="forums.php">Forums</a>
 </div>
 
 
@@ -47,16 +47,26 @@ function closeNav() {
 <br>
 <br>
 
-<div style="display:flex; width: 90%; background-color: #000000;">
+
+      <h2>Should we implement a slow-mo feature for businesses to use in their posts?</h2>
+      <hr>
+
+      <h3>#Yes definitely!</h3>
+      <h3>#No way!</h3>
+      <h3>#Isn't this really unnecessary?? D:</h3>
+      <hr>
+
+      <h2>Do you think normal account users should be allowed to post?</h2>
+      <hr>
+
+      <h3>#Yes definitely!</h3>
+      <h3>#No way!</h3>
+      <h3>#Isn't this really unnecessary?? D:</h3>
+      <hr>
 
 
-</div>
-
-<div style="display:flex; width: 100%;">
 
   
-
-</div>
 
 
     

@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$_SESSION["loggedin"] = true;
         //$_SESSION["id"] = $id;
         $_SESSION["username"] = trim($_POST["username"]);    
+		$_SESSION["link"] = trim($_POST["link"]);   
 	
 		
 		

@@ -113,3 +113,21 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: larger
 }
+
+
+.btn{
+
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  margin: 20px 0px;
+  text-align: center;
+  
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+

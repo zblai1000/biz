@@ -73,7 +73,46 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+
+
+
+
+
+.wrapper{
+  
+    background: url(../style/background.png);
+
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 200000s linear infinite;
+  background-position: center;
+}
+
+@keyframes animation {
+   100%{
+    background-position:-3000000px 0px ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
     </style>
+
+<div class="wrapper">
 
 <div class="header">
 
@@ -88,7 +127,7 @@ input[type=submit]:hover {
 </div>
 
 </div>
-<hr>
+
 
 <script>
 function openNav() {
@@ -102,7 +141,7 @@ document.getElementById("mySidenav").style.width = "0";
 </head>
 <body>
 
-<p class="productDiv"><?php echo $user ?></p>
+<h2 class="productDiv" style="font-size: 30px;"><?php echo $user ?></h2>
 
 <div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -168,17 +207,7 @@ document.getElementById("mySidenav").style.width = "0";
 
 
     
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <small><i>Copyright &copy; 2020 OneVision</i></small>
-    <br>
-    <br>
   
 
 

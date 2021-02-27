@@ -10,7 +10,7 @@
     <div class="header">
 
         <div class="logo">
-            <img src="../style/logo.png" class="logoImg">
+        <a href="home.php"><img src="../style/logo.png" class="logoImg"></a>
 
         </div>
 
@@ -36,10 +36,10 @@ function closeNav() {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Business Categories</a>
+  <a href="category.php">Business Categories</a>
   <a href="blogs.php">Blogs</a>
-  <a href="podcast.php">Podcasts</a>
-  <a href="#">Forums</a>
+  <a href="podcastNav.php">Podcasts</a>
+  <a href="forums.php">Forums</a>
 </div>
 
 
@@ -50,11 +50,11 @@ function closeNav() {
 <div style="display:flex; width: 100%;">
 
     <div style="width: 50%; margin: 2px;">
-        <a href="podcast.php"><img src="../style/1.jpg" class="profile" style="width: 100%; height: 100%;"></a>
+        <img src="../style/1.jpg" class="profile" style="width: 100%; height: 100%;">
     </div>
 
     <div style="width: 50%; margin: 2px;">
-        <a href="podcast.php"><img src="../style/3.jpg" class="profile" style="width: 100%; height: 100%;"></a>
+        <img src="../style/3.jpg" class="profile" style="width: 100%; height: 100%;">
     </div>
 
 </div>
@@ -62,11 +62,11 @@ function closeNav() {
 <div style="display:flex; width: 100%;">
 
     <div style="width: 50%; margin: 2px;">
-        <a href="podcast.php"><img src="../style/2.jpg" class="profile" style="width: 100%; height: 100%;"></a>
+        <img src="../style/2.jpg" class="profile" style="width: 100%; height: 100%;">
     </div>
 
     <div style="width: 50%; margin: 2px;">
-        <a href="podcast.php"><img src="../style/4.jpg" class="profile" style="width: 100%; height: 100%;"></a>
+        <img src="../style/4.jpg" class="profile" style="width: 100%; height: 100%;">
     </div>
 
 </div>
