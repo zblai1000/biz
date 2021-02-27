@@ -1,0 +1,115 @@
+.story{
+
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.profile{
+
+    margin: 8px; 
+
+    width: 4em; 
+    height: 4em;
+}
+
+.header{
+
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+}
+
+.logo{
+
+    position: absolute;
+    margin: 3px;
+    right: 175px;  
+    width: 40px;
+    height: 40px;
+  
+}
+
+.nav{
+
+    position: absolute;
+    top: 8px;
+    right: 15px;  
+    width: 10px;
+    height: 10px;
+
+}
+
+.logoImg{
+
+    margin: 0px; 
+
+    width: 5em; 
+    height: 5em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e9e9e9e8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  .inDiv{
+    display: flex;
+    flex-direction: row;
+    width: 33.33vw;
+}
+
+.productDiv{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: larger
+}
+
+.profileDiv{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: larger
+}
